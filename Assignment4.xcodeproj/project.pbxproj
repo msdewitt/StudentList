@@ -12,8 +12,10 @@
 		E43C50B21DE2439A001E7BDA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E43C50B01DE2439A001E7BDA /* Main.storyboard */; };
 		E43C50B41DE2439B001E7BDA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E43C50B31DE2439B001E7BDA /* Assets.xcassets */; };
 		E43C50B71DE2439B001E7BDA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E43C50B51DE2439B001E7BDA /* LaunchScreen.storyboard */; };
-		E43C50C21DE2439B001E7BDA /* Assignment4Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43C50C11DE2439B001E7BDA /* Assignment4Tests.swift */; };
-		E43C50CD1DE2439B001E7BDA /* Assignment4UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43C50CC1DE2439B001E7BDA /* Assignment4UITests.swift */; };
+		E43C50DD1DE24627001E7BDA /* student.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43C50DC1DE24627001E7BDA /* student.swift */; };
+		E43C50DF1DE24874001E7BDA /* StudentDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43C50DE1DE24874001E7BDA /* StudentDetailsViewController.swift */; };
+		E43D70C51DF0C441003D8E08 /* AddStudentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43D70C41DF0C441003D8E08 /* AddStudentViewController.swift */; };
+		E4DD0BD11DF1325000E36ADA /* EditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4DD0BD01DF1325000E36ADA /* EditViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,11 +44,12 @@
 		E43C50B61DE2439B001E7BDA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E43C50B81DE2439B001E7BDA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E43C50BD1DE2439B001E7BDA /* Assignment4Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Assignment4Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		E43C50C11DE2439B001E7BDA /* Assignment4Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assignment4Tests.swift; sourceTree = "<group>"; };
 		E43C50C31DE2439B001E7BDA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E43C50C81DE2439B001E7BDA /* Assignment4UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Assignment4UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		E43C50CC1DE2439B001E7BDA /* Assignment4UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assignment4UITests.swift; sourceTree = "<group>"; };
-		E43C50CE1DE2439B001E7BDA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E43C50DC1DE24627001E7BDA /* student.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = student.swift; sourceTree = "<group>"; };
+		E43C50DE1DE24874001E7BDA /* StudentDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudentDetailsViewController.swift; sourceTree = "<group>"; };
+		E43D70C41DF0C441003D8E08 /* AddStudentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddStudentViewController.swift; sourceTree = "<group>"; };
+		E4DD0BD01DF1325000E36ADA /* EditViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,7 +82,6 @@
 			children = (
 				E43C50AB1DE2439A001E7BDA /* Assignment4 */,
 				E43C50C01DE2439B001E7BDA /* Assignment4Tests */,
-				E43C50CB1DE2439B001E7BDA /* Assignment4UITests */,
 				E43C50AA1DE2439A001E7BDA /* Products */,
 			);
 			sourceTree = "<group>";
@@ -99,9 +101,13 @@
 			children = (
 				E43C50AC1DE2439A001E7BDA /* AppDelegate.swift */,
 				E43C50AE1DE2439A001E7BDA /* ViewController.swift */,
+				E43C50DC1DE24627001E7BDA /* student.swift */,
 				E43C50B01DE2439A001E7BDA /* Main.storyboard */,
+				E4DD0BD01DF1325000E36ADA /* EditViewController.swift */,
 				E43C50B31DE2439B001E7BDA /* Assets.xcassets */,
 				E43C50B51DE2439B001E7BDA /* LaunchScreen.storyboard */,
+				E43D70C41DF0C441003D8E08 /* AddStudentViewController.swift */,
+				E43C50DE1DE24874001E7BDA /* StudentDetailsViewController.swift */,
 				E43C50B81DE2439B001E7BDA /* Info.plist */,
 			);
 			path = Assignment4;
@@ -110,19 +116,9 @@
 		E43C50C01DE2439B001E7BDA /* Assignment4Tests */ = {
 			isa = PBXGroup;
 			children = (
-				E43C50C11DE2439B001E7BDA /* Assignment4Tests.swift */,
 				E43C50C31DE2439B001E7BDA /* Info.plist */,
 			);
 			path = Assignment4Tests;
-			sourceTree = "<group>";
-		};
-		E43C50CB1DE2439B001E7BDA /* Assignment4UITests */ = {
-			isa = PBXGroup;
-			children = (
-				E43C50CC1DE2439B001E7BDA /* Assignment4UITests.swift */,
-				E43C50CE1DE2439B001E7BDA /* Info.plist */,
-			);
-			path = Assignment4UITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -193,13 +189,16 @@
 				TargetAttributes = {
 					E43C50A81DE2439A001E7BDA = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0810;
 					};
 					E43C50BC1DE2439B001E7BDA = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0810;
 						TestTargetID = E43C50A81DE2439A001E7BDA;
 					};
 					E43C50C71DE2439B001E7BDA = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0810;
 						TestTargetID = E43C50A81DE2439A001E7BDA;
 					};
 				};
@@ -257,7 +256,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				E43C50AF1DE2439A001E7BDA /* ViewController.swift in Sources */,
+				E43D70C51DF0C441003D8E08 /* AddStudentViewController.swift in Sources */,
+				E4DD0BD11DF1325000E36ADA /* EditViewController.swift in Sources */,
+				E43C50DF1DE24874001E7BDA /* StudentDetailsViewController.swift in Sources */,
 				E43C50AD1DE2439A001E7BDA /* AppDelegate.swift in Sources */,
+				E43C50DD1DE24627001E7BDA /* student.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,7 +268,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E43C50C21DE2439B001E7BDA /* Assignment4Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,7 +275,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E43C50CD1DE2439B001E7BDA /* Assignment4UITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -403,6 +404,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = BSU320.Assignment4;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -414,6 +416,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = BSU320.Assignment4;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -425,6 +428,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = BSU320.Assignment4Tests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Assignment4.app/Assignment4";
 			};
 			name = Debug;
@@ -437,6 +441,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = BSU320.Assignment4Tests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Assignment4.app/Assignment4";
 			};
 			name = Release;
@@ -448,6 +453,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = BSU320.Assignment4UITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = Assignment4;
 			};
 			name = Debug;
@@ -459,6 +465,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = BSU320.Assignment4UITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = Assignment4;
 			};
 			name = Release;
@@ -482,6 +489,7 @@
 				E43C50D31DE2439B001E7BDA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E43C50D41DE2439B001E7BDA /* Build configuration list for PBXNativeTarget "Assignment4Tests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +498,7 @@
 				E43C50D61DE2439B001E7BDA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E43C50D71DE2439B001E7BDA /* Build configuration list for PBXNativeTarget "Assignment4UITests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +507,7 @@
 				E43C50D91DE2439B001E7BDA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
